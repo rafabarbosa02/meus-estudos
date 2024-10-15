@@ -5,7 +5,7 @@
  function comparaValores($a, $b, $c) {
     
     $soma = $a + $b;
-    return "A soma de A: $a e B: $b é igual: $soma <br>";
+    echo "A soma de A: $a e B: $b é igual: $soma <br>";
     
     if($soma < $c) {
         echo "A soma de A e B é menor do que C";
