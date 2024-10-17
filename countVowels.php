@@ -2,12 +2,12 @@
 
  function countVowels($word) {
     
-    $vogais = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+    $vogais = ["a", "e", "i", "o", "u"];
     $contadorVogais = 0;
     
     for($i = 0; $i < strlen($word); $i++) {
-        
-        if(is_string($word) AND in_array($word, $vogais)) {
+        $stringLower = strtolower($word[$i]);
+        if(in_array($stringLower, $vogais)) {
 
             $contadorVogais++;
             
